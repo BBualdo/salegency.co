@@ -1,9 +1,32 @@
 ---
 import { Image } from "astro:assets";
-import logo from '/public/img/logo.webp';
-
+import logo from "/public/img/logo-light.png";
 ---
 
-<nav class="h-[60px] gradient-dark flex items-center p-4 w-[80%] border-2 rounded-xl border-zinc-700">
-  <Image src={logo} alt="Salegency Logo" width={100} />
+<nav
+  class="h-[60px] gradient-dark flex items-center justify-between p-4 w-[80%] border-2 rounded-xl border-zinc-700"
+>
+  <div class="w-[140px]">
+    <Image src={logo} alt="Salegency Logo" class="cursor-pointer" />
+  </div>
+  <div
+    class="flex flex-1 items-center justify-center gap-20 text-white text-lg font-bold"
+  >
+    <button class="text-white hover:text-greencell duration-200 transition-all"
+      >OFFER</button
+    >
+    <button class="text-white hover:text-greencell duration-200 transition-all"
+      >OPINIONS</button
+    >
+    <button class="text-white hover:text-greencell duration-200 transition-all"
+      >RESULTS</button
+    >
+    <button class="text-white hover:text-greencell duration-200 transition-all"
+      >ABOUT</button
+    >
+  </div>
+  <button
+    class="border-greencell font-medium border-2 rounded-md hover:bg-greencell transition-all duration-200 text-white hover:text-black px-8 py-2"
+    >LET'S TALK</button
+  >
 </nav>
