@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .gradient-dark {
+    @apply bg-gradient-to-t from-zinc-800 to-black;
+  }
+}
