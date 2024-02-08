@@ -1,0 +1,63 @@
+---
+import { FaBoxes } from "react-icons/fa";
+import { CiDiscount1 } from "react-icons/ci";
+import { FaGlobe } from "react-icons/fa";
+import { FaUserCog } from "react-icons/fa";
+import { IoMdMegaphone } from "react-icons/io";
+import OfferElement from "./OfferElement.astro";
+---
+
+<section id="offer" class="min-h-screen flex items-center justify-center">
+  <div
+    class="flex items-center flex-nowrap justify-center flex-col gap-4 w-[1200px]"
+  >
+    <h1 class="text-6xl font-bold text-center">
+      HOW DO WE BOOST REVENUE, OPTIMIZE SALES, AND BUILD OR ELEVATE YOUR
+      PRODUCTS?
+    </h1>
+    <h2 class="text-3xl text-center">We will plan and execute through:</h2>
+    <div class="flex flex-col gap-4">
+      <div class="flex items-center justify-between">
+        <OfferElement
+          title="Product Development or Improvement"
+          description="Understanding what your customers want so we can create or enhance a product they truly like and need."
+        >
+          <FaBoxes className="text-5xl text-greencell" />
+        </OfferElement>
+        <OfferElement
+          title="Offer Creation"
+          description="Crafting compelling offers that resonate with your audience and attract even those who haven’t heard about you."
+        >
+          <CiDiscount1 className="text-5xl text-greencell" />
+        </OfferElement>
+        <OfferElement
+          title="Sales Campaign"
+          description="Planning and executing our initial sales campaign, including social media posts, ads, and emails for a specific event."
+        >
+          <FaGlobe className="text-5xl text-greencell" />
+        </OfferElement>
+      </div>
+      <div class="flex items-center justify-between">
+        <OfferElement
+          title="Sales Funnels"
+          description="After analyzing the results from our initial campaign, we’ll establish B2C sales funnels and implement a strategy to generate revenue every month."
+        >
+          <FaUserCog className="text-5xl text-greencell" />
+        </OfferElement>
+        <div class="flex-1 flex items-center flex-col h-full">
+          <button
+            class="py-2 w-1/2 bg-greencell border-2 rounded-full border-greencell hover:bg-black hover:text-white transition-all duration-200 hover:shadow-md hover:shadow-greencell text-black uppercase font-medium"
+            >Let's Talk</button
+          >
+        </div>
+
+        <OfferElement
+          title="Continuous Execution"
+          description="Ensuring optimized sales funnels promotes repeat purchases, referrals, and increased spending, fostering audience growth and brand strength."
+        >
+          <IoMdMegaphone className="text-5xl text-greencell" />
+        </OfferElement>
+      </div>
+    </div>
+  </div>
+</section>
