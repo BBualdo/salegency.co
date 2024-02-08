@@ -3,30 +3,36 @@ import { Image } from "astro:assets";
 import logo from "/public/img/logo-light.png";
 ---
 
-<nav
-  class="h-[60px] gradient-dark flex items-center justify-between p-4 w-[80%] border-2 rounded-xl border-zinc-700"
->
-  <div class="w-[140px]">
-    <Image src={logo} alt="Salegency Logo" class="cursor-pointer" />
-  </div>
+<nav class="w-[80%] gradient-dark-reversed p-[1px] rounded-xl h-[60px]">
   <div
-    class="flex flex-1 items-center justify-center gap-20 text-white text-lg font-bold"
+    class="gradient-dark flex items-center rounded-xl justify-between h-[60px] p-4"
   >
-    <button class="text-white hover:text-greencell duration-200 transition-all"
-      >OFFER</button
+    <a href="#intro" class="w-[140px]">
+      <Image src={logo} alt="Salegency Logo" class="cursor-pointer" />
+    </a>
+    <div
+      class="flex flex-1 items-center justify-center gap-20 text-white text-lg font-bold"
     >
-    <button class="text-white hover:text-greencell duration-200 transition-all"
-      >OPINIONS</button
-    >
-    <button class="text-white hover:text-greencell duration-200 transition-all"
-      >RESULTS</button
-    >
-    <button class="text-white hover:text-greencell duration-200 transition-all"
-      >ABOUT</button
+      <button
+        class="text-white hover:text-greencell duration-200 transition-all"
+        >OFFER</button
+      >
+      <button
+        class="text-white hover:text-greencell duration-200 transition-all"
+        >OPINIONS</button
+      >
+      <button
+        class="text-white hover:text-greencell duration-200 transition-all"
+        >RESULTS</button
+      >
+      <button
+        class="text-white hover:text-greencell duration-200 transition-all"
+        >ABOUT</button
+      >
+    </div>
+    <button
+      class="border-greencell font-medium border-2 rounded-md hover:bg-greencell transition-all duration-200 text-white hover:text-black px-8 py-2"
+      >LET'S TALK</button
     >
   </div>
-  <button
-    class="border-greencell font-medium border-2 rounded-md hover:bg-greencell transition-all duration-200 text-white hover:text-black px-8 py-2"
-    >LET'S TALK</button
-  >
 </nav>

@@ -6,4 +6,8 @@
   .gradient-dark {
     @apply bg-gradient-to-t from-zinc-800 to-black;
   }
+
+  .gradient-dark-reversed {
+    @apply bg-gradient-to-b from-zinc-600 to-black;
+  }
 }
