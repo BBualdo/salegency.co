@@ -1,35 +1,29 @@
 ---
 import { Image } from "astro:assets";
 import logo from "/public/img/logo-light.png";
+import navlinks from "../constants/navlinks";
 ---
 
-<nav class="w-[80%] gradient-dark-reversed p-[1px] rounded-xl h-[60px]">
+<nav class="min-w-[80%] gradient-dark-reversed p-[1px] rounded-xl h-[60px]">
   <div
-    class="gradient-dark flex items-center rounded-xl justify-between h-[60px] p-4"
+    class="gradient-dark flex items-center rounded-xl justify-between gap-10 h-[60px] p-4"
   >
     <a href="#intro" class="w-[140px]">
       <Image src={logo} alt="Salegency Logo" class="cursor-pointer" />
     </a>
     <div
-      class="flex flex-1 items-center justify-center gap-20 text-white text-lg font-bold"
+      class="flex flex-1 items-center justify-center gap-10 text-white text-lg font-bold"
     >
-      <a
-        href="#offer"
-        class="text-white hover:text-greencell duration-200 transition-all"
-        >OFFER</a
-      >
-      <button
-        class="text-white hover:text-greencell duration-200 transition-all"
-        >OPINIONS</button
-      >
-      <button
-        class="text-white hover:text-greencell duration-200 transition-all"
-        >RESULTS</button
-      >
-      <button
-        class="text-white hover:text-greencell duration-200 transition-all"
-        >ABOUT</button
-      >
+      {
+        navlinks.map((link) => (
+          <a
+            href={link.href}
+            class="text-white hover:text-greencell duration-200 transition-all uppercase"
+          >
+            {link.title}
+          </a>
+        ))
+      }
     </div>
     <button
       class="border-greencell font-medium border-2 rounded-md hover:bg-greencell transition-all duration-200 text-white hover:text-black px-8 py-2"
