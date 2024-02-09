@@ -1,0 +1,18 @@
+---
+import process from "../../constants/process";
+import StepCard from "./StepCard.astro";
+---
+
+<div class="flex items-center gap-2 justify-center">
+  {
+    process.map((step) => (
+      <StepCard
+        step={step.step}
+        title={step.title}
+        description={step.description}
+        timeline={step.timeline}
+        isUnfold={step.isUnfold}
+      />
+    ))
+  }
+</div>
