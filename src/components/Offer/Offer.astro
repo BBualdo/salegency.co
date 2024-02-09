@@ -1,0 +1,76 @@
+---
+import { FaBoxesStacked } from "react-icons/fa6";
+import { TfiStatsUp } from "react-icons/tfi";
+import { PiShareNetworkFill } from "react-icons/pi";
+import { FaCalendarAlt } from "react-icons/fa";
+import { FaGlobe } from "react-icons/fa";
+import { IoMdMegaphone } from "react-icons/io";
+import OfferElement from "./OfferElement.astro";
+import LetsTalkButton from "../shared/LetsTalkButton.astro";
+---
+
+<section id="offer" class="min-h-screen flex items-center justify-center">
+  <div class="flex items-center flex-nowrap justify-center flex-col gap-20">
+    <div class="flex flex-col items-center gap-2">
+      <h2 class="text-4xl font-bold text-center uppercase">
+        Welcome to <span class="text-greencell">sale</span>gency:
+      </h2>
+      <h3 class="text-2xl text-center">
+        Likely the world's first agency designed to manage the monthly sales of
+        experts and coaches.
+      </h3>
+    </div>
+    <div class="flex flex-col gap-10">
+      <div class="flex items-center justify-between">
+        <OfferElement
+          title="Product Development or Improvement"
+          description="Whether you already have a digital product and want feedback on it, or you're looking to create one, jump on a consultation call, and let us assist you with that."
+        >
+          <FaBoxesStacked className="text-4xl text-greencell" />
+        </OfferElement>
+        <OfferElement
+          title="Site Creation or Optimization"
+          description="Let us build or optimize your site to convert traffic into prospects and, in turn, prospects into customers on a monthly basis."
+        >
+          <TfiStatsUp className="text-4xl text-greencell" />
+        </OfferElement>
+        <OfferElement
+          title="Software Implementation"
+          description="To sell your digital product, we require a few software applications running together. We will not only advise you on the best ones but also implement them for you."
+        >
+          <PiShareNetworkFill className="text-4xl text-greencell" />
+        </OfferElement>
+      </div>
+      <div class="flex items-center justify-between">
+        <OfferElement
+          title="Sales Calendar"
+          description="We will create timelines for your product launches, promotions, and sales events, and then execute them, allowing you to focus on other aspects of your business."
+        >
+          <FaCalendarAlt className="text-4xl text-greencell" />
+        </OfferElement>
+        <OfferElement
+          title="Sales Messaging"
+          description="We will craft monthly sales communications for you, suitable for use in ads, emails, landing pages, your social media accounts, or even videos."
+        >
+          <FaGlobe className="text-4xl text-greencell" />
+        </OfferElement>
+        <OfferElement
+          title="Continuous Sales Execution"
+          description="We run paid ads for you on a monthly basis and manage your email marketing campaigns or automations to promote repeat purchases, audience growth, and brand strength."
+        >
+          <IoMdMegaphone className="text-4xl text-greencell" />
+        </OfferElement>
+      </div>
+    </div>
+    <div class="flex flex-col items-center gap-4">
+      <p class="text-center text-white text-2xl">
+        Let us find you a clients on monthly basis that really needs your
+        experise.<br />
+        Over the next few weeks, you’ll <span class="text-greencell font-bold"
+          >start to make more money.</span
+        >
+      </p>
+      <LetsTalkButton />
+    </div>
+  </div>
+</section>
