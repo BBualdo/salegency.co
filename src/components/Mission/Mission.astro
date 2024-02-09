@@ -1,0 +1,35 @@
+---
+import LetsTalkButton from "../shared/LetsTalkButton.astro";
+import MissionElement from "./MissionElement.astro";
+---
+
+<section id="mission" class="min-h-screen flex items-center justify-center">
+  <div class="flex flex-col gap-10 items-center min-w-[80%]">
+    <h2 class="text-greencell uppercase text-3xl font-bold">
+      Our mission is to:
+    </h2>
+    <div class="flex items-center justify-between gap-10">
+      <div class="flex flex-col gap-10 items-start">
+        <ul class="flex flex-col gap-6">
+          <MissionElement
+            title="Maximize Earnings"
+            description="Leverage digital products rather than one-on-one coachings for effortless scalability, reaching a broad customer base."
+          />
+          <MissionElement
+            title="Reclaim Free Time"
+            description="Entrust us with sales, freeing you from the continuous cycle of closing more and more clients and then engaging in one-on-one coaching, ensuring more time for what matters."
+          />
+          <MissionElement
+            title="Diversify Income Streams"
+            description="Combine high-ticket coaching with digital products to explore diverse revenue channels."
+          />
+          <MissionElement
+            title="Accelerate Brand Growth"
+            description="Attract more customers due to a lower barrier to entry, expanding your audience swiftly and effectively."
+          />
+        </ul>
+        <LetsTalkButton />
+      </div>
+    </div>
+  </div>
+</section>
