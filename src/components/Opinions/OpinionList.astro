@@ -1,0 +1,17 @@
+---
+import opinions from "../../constants/opinions";
+import Opinion from "./Opinion.astro";
+---
+
+<div class="flex gap-4 mt-20 w-full">
+  {
+    opinions.map((opinion) => (
+      <Opinion
+        image={opinion.image}
+        author={opinion.author}
+        company={opinion.company}
+        content={opinion.content}
+      />
+    ))
+  }
+</div>

@@ -1,0 +1,31 @@
+---
+import { Image } from "astro:assets";
+import { FaQuoteLeft } from "react-icons/fa";
+import { FaQuoteRight } from "react-icons/fa";
+
+const { image, author, company, content } = Astro.props;
+---
+
+<div
+  class="bg-zinc-900 rounded-lg w-[400px] h-[320px] p-4 flex flex-col items-center gap-4 hover:shadow-xl hover:shadow-greencell transition-all duration-300 hover:scale-105"
+>
+  <div class="flex flex-col items-center gap-2">
+    <Image
+      src={image}
+      alt={`${author} photo`}
+      width={50}
+      height={50}
+      class="rounded-full aspect-[1/1]"
+    />
+    <div class="flex flex-col items-center">
+      <p>{author}</p>
+      <p class="text-sm text-white/50">{company}</p>
+    </div>
+  </div>
+
+  <div class="flex flex-col items-center gap-2">
+    <FaQuoteLeft className="text-greencell inline" />
+    <p class="text-center">{content}</p>
+    <FaQuoteRight className="text-greencell inline" />
+  </div>
+</div>
