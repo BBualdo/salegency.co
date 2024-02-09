@@ -7,7 +7,7 @@ const { image, author, company, content } = Astro.props;
 ---
 
 <div
-  class="bg-zinc-900 rounded-lg w-[400px] h-[320px] p-4 flex flex-col items-center gap-4 hover:shadow-xl hover:shadow-greencell transition-all duration-300 hover:scale-105"
+  class="bg-zinc-900 rounded-lg min-w-[400px] max-w-full max-h-full min-h-[320px] p-4 flex flex-col items-center gap-4 hover:shadow-xl hover:shadow-greencell transition-all duration-300 hover:scale-105"
 >
   <div class="flex flex-col items-center gap-2">
     <Image
