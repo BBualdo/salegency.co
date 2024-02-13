@@ -2,6 +2,7 @@
 import { Image } from "astro:assets";
 import logo from "/public/img/logo-light.png";
 import navlinks from "../../constants/navlinks";
+import LetsTalkButton from "./LetsTalkButton.astro";
 ---
 
 <nav class="min-w-[80%] gradient-dark-reversed p-[1px] rounded-xl h-[60px]">
@@ -25,9 +26,6 @@ import navlinks from "../../constants/navlinks";
         ))
       }
     </div>
-    <button
-      class="border-greencell font-medium border-2 rounded-md hover:bg-greencell transition-all duration-200 text-white hover:text-black px-8 py-2"
-      >LET'S TALK</button
-    >
+    <LetsTalkButton />
   </div>
 </nav>
