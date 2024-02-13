@@ -26,6 +26,10 @@
 }
 
 @layer components {
+  .heading {
+    @apply text-4xl font-bold text-center uppercase leading-8 text-white
+  }
+
   .gradient-dark {
     @apply bg-gradient-to-t from-zinc-800 to-black;
   }
