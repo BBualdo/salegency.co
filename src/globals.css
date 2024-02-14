@@ -26,6 +26,10 @@
 }
 
 @layer components {
+  .section {
+    @apply min-h-screen flex items-center justify-center max-w-[1080px]
+  }
+
   .heading {
     @apply text-4xl font-bold text-center uppercase leading-8 text-white
   }
