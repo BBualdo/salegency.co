@@ -4,17 +4,20 @@ import LetsTalkButton from "../shared/LetsTalkButton.astro";
 
 <section id="intro" class="section">
   <div class="flex w-full items-center justify-between gap-10">
-    <div class="flex items-center flex-1 justify-center flex-col gap-4">
-      <h2>Charro Pyl, <span>coach:</span></h2>
-      <p>
+    <div class="flex flex-1 justify-center flex-col gap-4">
+      <h2 class="text-4xl text-greencell font-bold">
+        Charro Pyl, <span class="font-normal text-white/70">coach:</span>
+      </h2>
+      <p class="text-2xl font-bold text-balance">
         “I went from generating a meager income of a few thousand euros to
-        earning a substantial 750,000 euros in revenue.”
+        earning a substantial <span class="text-greencell">750,000 euros</span> in
+        revenue.”
       </p>
-      <div class="flex items-center gap-10 mt-10">
+      <div class="flex items-center gap-10 mt-10 justify-center">
         <LetsTalkButton>Let’s talk how we can help</LetsTalkButton>
       </div>
     </div>
-    <div class="relative w-[340px] h-[600px]">
+    <div class="relative w-[340px] h-[600px] shadow-md shadow-greencell">
       <iframe
         src="https://youtube.com/embed/5VjZnWxhUoc?si=t_PC6tokPodo3YI5"
         allow="autoplay; fullscreen; picture-in-picture"
