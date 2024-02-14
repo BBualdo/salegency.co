@@ -1,11 +1,16 @@
 ---
+import { Image } from "astro:assets";
 import LetsTalkButton from "../shared/LetsTalkButton.astro";
 import MissionElement from "./MissionElement.astro";
 ---
 
 <section id="mission" class="section">
   <div class="flex flex-col gap-10 items-center w-full">
-    <h2 class="text-greencell heading">Our mission is to:</h2>
+    <h2 class="heading text-balance">
+      Our mission is to help experts and coaches <span class="text-greencell"
+        >build and sell their digital products.</span
+      >
+    </h2>
     <div class="flex items-center justify-between gap-10">
       <div class="flex flex-col flex-1 gap-10 items-start">
         <ul class="flex flex-col gap-6">
@@ -29,9 +34,15 @@ import MissionElement from "./MissionElement.astro";
         <LetsTalkButton>Let's Talk</LetsTalkButton>
       </div>
       <div
-        class="flex-1 flex items-center justify-center text-3xl font-bold uppercase text-greencell text-center h-[500px] border border-greencell"
+        class="relative flex-1 font-bold uppercase h-[500px] overflow-hidden"
       >
-        Something will be here
+        <Image
+          alt="Photo of an owner"
+          src="/img/owner-photo-1.png"
+          class="absolute object-cover -top-6"
+          height={600}
+          width={500}
+        />
       </div>
     </div>
   </div>
