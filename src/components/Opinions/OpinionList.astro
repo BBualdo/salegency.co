@@ -17,7 +17,9 @@ import VideoOpinion from "./VideoOpinion.astro";
           />
         );
       } else if (opinion.type === "video") {
-        return <VideoOpinion videoURL={opinion.videoURL} />;
+        return (
+          <VideoOpinion videoURL={opinion.videoURL} title={opinion.title} />
+        );
       }
     })
   }

@@ -46,7 +46,8 @@ const opinions = [
     company: "FitByCharro",
     content:
       "",
-    videoURL: "https://youtube.com/embed/5VjZnWxhUoc?si=t_PC6tokPodo3YI5"
+    videoURL: "https://youtube.com/embed/5VjZnWxhUoc?si=t_PC6tokPodo3YI5",
+    title:"Charro Pyl Salegency review."
   },
 ];
 
