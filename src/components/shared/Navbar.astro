@@ -5,7 +5,7 @@ import navlinks from "../../constants/navlinks";
 import LetsTalkButton from "./LetsTalkButton.astro";
 ---
 
-<nav class="min-w-[80%] gradient-dark-reversed p-[1px] rounded-xl h-[60px]">
+<nav class="min-w-[1080px] gradient-dark-reversed p-[1px] rounded-xl h-[60px]">
   <div
     class="gradient-dark flex items-center rounded-xl justify-between gap-10 h-[60px] p-4"
   >
@@ -19,7 +19,7 @@ import LetsTalkButton from "./LetsTalkButton.astro";
         navlinks.map((link) => (
           <a
             href={link.href}
-            class="text-white hover:text-greencell duration-200 transition-all uppercase"
+            class="text-white text-base hover:text-greencell duration-200 transition-all"
           >
             {link.title}
           </a>

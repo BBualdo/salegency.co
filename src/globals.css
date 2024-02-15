@@ -3,42 +3,42 @@
 @tailwind utilities;
 
 @layer base {
-  * {
-    scrollbar-width: thin;
-    scrollbar-color: #7ed957;
-  }
+	* {
+		scrollbar-width: thin;
+		scrollbar-color: #7ed957;
+	}
 
-  /* Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-  }
+	/* Chrome, Edge, and Safari */
+	*::-webkit-scrollbar {
+		width: 8px;
+		height: 8px;
+	}
 
-  *::-webkit-scrollbar-track {
-    background: #7ed95734;
-    opacity: 0.5;
-  }
+	*::-webkit-scrollbar-track {
+		background: #7ed95734;
+		opacity: 0.5;
+	}
 
-  *::-webkit-scrollbar-thumb {
-    background-color: #7ed957;
-    border: 3px solid #7ed957;
-  }
+	*::-webkit-scrollbar-thumb {
+		background-color: #7ed957;
+		border: 3px solid #7ed957;
+	}
 }
 
 @layer components {
-  .section {
-    @apply min-h-screen flex items-center justify-center max-w-[1080px]
-  }
+	.section {
+		@apply flex min-h-screen max-w-[1080px] items-center justify-center;
+	}
 
-  .heading {
-    @apply text-4xl font-bold text-center uppercase leading-8 text-white
-  }
+	.heading {
+		@apply text-center text-4xl font-bold uppercase leading-8 text-white;
+	}
 
-  .gradient-dark {
-    @apply bg-gradient-to-t from-zinc-800 to-black;
-  }
+	.gradient-dark {
+		@apply bg-gradient-to-t from-zinc-800 to-black;
+	}
 
-  .gradient-dark-reversed {
-    @apply bg-gradient-to-b from-zinc-600 to-black;
-  }
+	.gradient-dark-reversed {
+		@apply bg-gradient-to-b from-zinc-600 to-black;
+	}
 }
