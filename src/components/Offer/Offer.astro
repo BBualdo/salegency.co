@@ -10,7 +10,7 @@ import LetsTalkButton from "../shared/LetsTalkButton.astro";
 ---
 
 <section id="offer" class="section">
-  <div class="flex items-center flex-nowrap justify-center flex-col gap-20">
+  <div class="flex items-center flex-nowrap justify-center flex-col gap-10">
     <div class="flex flex-col items-center gap-2">
       <h2 class="heading">
         Welcome to <span class="text-greencell">sale</span>gency:
@@ -20,10 +20,10 @@ import LetsTalkButton from "../shared/LetsTalkButton.astro";
         experts and coaches.
       </h3>
     </div>
-    <div class="flex flex-col gap-10">
-      <div class="flex items-center justify-between">
+    <div class="flex flex-col gap-4">
+      <div class="flex justify-between gap-4">
         <OfferElement
-          title="Product Development or Improvement"
+          title="Product Development"
           description="Whether you already have a digital product and want feedback on it, or you're looking to create one, jump on a consultation call, and let us assist you with that."
         >
           <FaBoxesStacked className="text-4xl text-greencell" />
@@ -41,7 +41,7 @@ import LetsTalkButton from "../shared/LetsTalkButton.astro";
           <PiShareNetworkFill className="text-4xl text-greencell" />
         </OfferElement>
       </div>
-      <div class="flex items-center justify-between">
+      <div class="flex justify-between gap-4">
         <OfferElement
           title="Sales Calendar"
           description="We will create timelines for your product launches, promotions, and sales events, and then execute them, allowing you to focus on other aspects of your business."
@@ -62,15 +62,6 @@ import LetsTalkButton from "../shared/LetsTalkButton.astro";
         </OfferElement>
       </div>
     </div>
-    <div class="flex flex-col items-center gap-4">
-      <p class="text-center text-white text-2xl">
-        Let us find you a clients on monthly basis that really needs your
-        experise.<br />
-        Over the next few weeks, you’ll <span class="text-greencell font-bold"
-          >start to make more money.</span
-        >
-      </p>
-      <LetsTalkButton>Let's Talk</LetsTalkButton>
-    </div>
+    <LetsTalkButton>Let's Talk</LetsTalkButton>
   </div>
 </section>
