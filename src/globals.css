@@ -23,6 +23,10 @@
 		background-color: #7ed957;
 		border: 3px solid #7ed957;
 	}
+
+	main {
+    color: white;
+  }
 }
 
 @layer components {

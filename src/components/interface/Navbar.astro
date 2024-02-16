@@ -1,6 +1,5 @@
 ---
-import { Image } from "astro:assets";
-import logo from "/public/img/logo-light.png";
+import Logo from "./Logo.astro";
 import navlinks from "../../constants/navlinks";
 import LetsTalkButton from "./LetsTalkButton.astro";
 ---
@@ -9,9 +8,7 @@ import LetsTalkButton from "./LetsTalkButton.astro";
   <div
     class="gradient-dark flex items-center rounded-xl justify-between gap-10 h-[60px] p-4"
   >
-    <a href="#intro" class="w-[140px]">
-      <Image src={logo} alt="Salegency Logo" class="cursor-pointer" />
-    </a>
+    <Logo href="#intro" className="w-[140px]" />
     <div
       class="flex flex-1 items-center justify-center gap-10 text-white text-lg font-bold"
     >
