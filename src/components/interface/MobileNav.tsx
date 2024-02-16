@@ -19,7 +19,7 @@ const MobileNav = () => {
 
   return (
     <>
-      <header className="lg:hidden fixed top-4 left-4 z-40 w-full">
+      <header className="lg:hidden fixed top-0 left-0 p-4 z-40 w-full bg-black">
         <button onClick={openNavbar} className="">
           <GiHamburgerMenu className="text-greencell text-3xl hover:text-white transition-all duration-300" />
         </button>
