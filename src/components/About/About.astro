@@ -5,17 +5,17 @@ import Socials from "./Socials.astro";
 
 <section id="about" class="section pt-[120px]">
   <div class="bg-zinc-900 p-10 rounded-lg flex flex-col items-center gap-10">
-    <h2 class="text-4xl uppercase font-bold">
+    <h2 class="heading">
       <span class="text-greencell">Who</span> created Salegency and <span
         class="text-greencell">why</span
       >?
     </h2>
-    <div class="flex gap-10">
-      <div class="flex-1 overflow-hidden relative">
+    <div class="flex gap-10 xs:max-lg:flex-col">
+      <div class="lg:flex-1 overflow-hidden relative xs:max-lg:h-[240px]">
         <Image
           alt="An owner in suit."
           src="/img/owner-image-1.png"
-          class="absolute scale-150 top-[132px]"
+          class="absolute scale-150 xs:top-20 lg:top-[132px]"
           height={1000}
           width={1000}
         />
