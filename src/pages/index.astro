@@ -8,18 +8,17 @@ import Process from "../components/Process/Process.astro";
 import Results from "../components/Results/Results.astro";
 import About from "../components/About/About.astro";
 import Navbar from "../components/interface/Navbar.astro";
-import LetsTalkButton from "../components/interface/LetsTalkButton.astro";
+import LetsTalkButton from "../components/interface/LetsTalkButton";
+import MobileNav from "../components/interface/MobileNav";
 ---
 
 <MainLayout
   title="Salegency - Creativity to Profit."
   description="The world's first agency dedicated to optimizing monthly sales for experts and coaches."
 >
-  <header
-    class="flex fixed top-4 left-0 right-0 items-center justify-center py-4 z-40"
-  >
-    <Navbar />
-  </header>
+  <Navbar />
+  <MobileNav client:load />
+
   <main class="flex flex-col items-center px-4">
     <Intro />
     <Mission />
@@ -39,3 +38,4 @@ import LetsTalkButton from "../components/interface/LetsTalkButton.astro";
     </div>
   </main>
 </MainLayout>
+../components/interface/LetsTalkButton.tsx
