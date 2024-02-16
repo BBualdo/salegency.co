@@ -4,7 +4,7 @@ import TextOpinion from "./TextOpinion.astro";
 import VideoOpinion from "./VideoOpinion.astro";
 ---
 
-<div class="flex gap-4 mt-20 w-full p-6">
+<div class="flex gap-4 xs:mt-4 lg:mt-20 w-full p-6 xs:max-lg:flex-col">
   {
     opinions.map((opinion) => {
       if (opinion.type === "text") {
