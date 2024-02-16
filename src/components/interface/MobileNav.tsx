@@ -36,8 +36,9 @@ const MobileNav = () => {
         <div className="flex flex-col gap-8 items-center">
           <Logo href="#intro" className="w-[160px]" />
           <div className="flex flex-col gap-6 items-center w-full">
-            {navlinks.map((link) => (
+            {navlinks.map((link, index) => (
               <a
+                key={index}
                 href={link.href}
                 className="text-base hover:text-greencell duration-200 transition-all"
               >
