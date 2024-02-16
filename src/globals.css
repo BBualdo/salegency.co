@@ -31,7 +31,7 @@
 
 @layer components {
   .section {
-    @apply flex min-h-screen lg:max-w-[1080px] items-center justify-center xs:max-lg:py-20;
+    @apply flex min-h-screen lg:max-w-[1080px] items-center justify-center xs:max-lg:py-10;
   }
 
   .heading {
@@ -45,4 +45,5 @@
   .gradient-dark-reversed {
     @apply bg-gradient-to-b from-zinc-600 to-black;
   }
+
 }

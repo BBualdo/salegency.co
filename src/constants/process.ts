@@ -1,7 +1,7 @@
 const process = [
   {
     step: 1,
-    title: "Let’s talk",
+    title: "Let’s talk how we can help",
     description:
       "Before signing the contract, our initial one or two calls focus on discussing essential elements, including necessary software, product structure, business model, and the implementation offer.",
     timeline: "Up to 1 hour",

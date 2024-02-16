@@ -5,7 +5,6 @@ export default {
     extend: {
       colors: {
         greencell: "#7ED957",
-        lime: "#d9fc67",
       },
       screens: {
         lg: "1104px",

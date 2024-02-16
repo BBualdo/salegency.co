@@ -12,7 +12,9 @@ import MissionElement from "./MissionElement.astro";
       >
     </h2>
     <div class="flex items-center xs:max-lg:flex-col justify-between gap-10">
-      <div class="relative xs:max-lg:w-full lg:flex-1 xs:h-[300px] lg:h-[500px] overflow-hidden">
+      <div
+        class="relative xs:max-lg:w-full lg:flex-1 xs:h-[300px] lg:h-[500px] overflow-hidden"
+      >
         <Image
           alt=""
           src="/img/mission-image.avif"
@@ -21,7 +23,7 @@ import MissionElement from "./MissionElement.astro";
           width={800}
         />
       </div>
-      <div class="flex flex-col flex-1 gap-10 items-start">
+      <div class="flex flex-col flex-1 gap-10 lg:items-start w-full">
         <ul class="flex flex-col gap-6">
           <MissionElement
             title="Maximize Earnings"

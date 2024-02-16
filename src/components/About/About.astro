@@ -1,54 +1,60 @@
 ---
 import { Image } from "astro:assets";
 import Socials from "./Socials.astro";
+import LetsTalkButton from "../interface/LetsTalkButton";
 ---
 
-<section id="about" class="section pt-[120px]">
+<section id="about" class="section">
   <div class="bg-zinc-900 p-10 rounded-lg flex flex-col items-center gap-10">
-    <h2 class="heading">
-      <span class="text-greencell">Who</span> created Salegency and <span
-        class="text-greencell">why</span
-      >?
-    </h2>
-    <div class="flex gap-10 xs:max-lg:flex-col">
-      <div class="lg:flex-1 overflow-hidden relative xs:max-lg:h-[240px]">
-        <Image
-          alt="An owner in suit."
-          src="/img/owner-image-1.png"
-          class="absolute scale-150 xs:top-20 lg:top-[132px] object-center"
-          height={1000}
-          width={1000}
-        />
+    <h2 class="heading">Who created Salegency and why?</h2>
+
+    <div class="flex flex-col">
+      <div class="flex gap-10 xs:max-lg:flex-col">
+        <div class="lg:flex-1 overflow-hidden relative xs:max-lg:h-[240px]">
+          <Image
+            alt="An owner in suit."
+            src="/img/owner-image-1.png"
+            class="absolute scale-150 xs:top-20 lg:top-[132px] object-center"
+            height={1000}
+            width={1000}
+          />
+        </div>
+        <div class="flex flex-col gap-4 flex-1 leading-8 pb-10">
+          <p>
+            Salegency was founded by Radek Bartczak, who brings over a decade of
+            online sales expertise at the age of 40.
+          </p>
+          <p>
+            His successful track record spans 7 diverse markets, collaborating,
+            for instance, with individuals like Matt Diggity or the publishing
+            house Złote Myśli in education, and STS or Superbet in betting,
+            among others.
+          </p>
+          <p>
+            With a commitment to measurable results, Radek dedicates a
+            significant part of his life to refining Salegency's services to
+            meet clients' needs.
+          </p>
+          <p>
+            If you are a coach or an expert, let's engage in a brief discussion
+            and explore how we can help you increase earnings and make a more
+            significant impact on the world.
+          </p>
+          <Socials />
+        </div>
       </div>
-      <div class="flex flex-col gap-4 flex-1 leading-8">
-        <p>
-          <span class="font-bold text-greencell tracking-wider"
-            >Radek Bartczak</span
-          >, the founder and lead strategist, brings over a <span
-            class="font-bold">decade of online sales expertise</span
-          > at the age of 40. His successful track record spans ten diverse markets,
-          collaborating with industry leaders like <span class="font-bold"
-            >Matt Diggity and ZloteMysli in education, and STS and Superbet in
-            betting</span
-          >, among others.
+
+      <div
+        class="flex flex-col items-center gap-4 border border-greencell/70 p-10 rounded-xl w-full lg:max-w-[1080px]"
+      >
+        <p
+          class="text-center text-white xs:text-md lg:text-lg font-bold uppercase"
+        >
+          Let us find you a clients on monthly basis that really needs your
+          experise.
         </p>
-        <p>
-          With an unwavering commitment to transparency, Radek consistently
-          delivers measurable results, <span class="font-bold"
-            >dedicating a significant part of his life to refining Salegency's
-            services to meet clients' needs</span
-          >. Choosing Salegency means having a partner capable of effectively
-          building and selling products on your behalf.
-        </p>
-        <p>
-          If you are a coach or an expert, let's engage in a brief discussion
-          and explore how we can help you increase earnings, make a more
-          significant impact on the world, and <span
-            class="font-bold text-greencell">pursue your life goals</span
-          >.
-        </p>
+        <LetsTalkButton>Let's Talk</LetsTalkButton>
       </div>
     </div>
-    <Socials />
   </div>
 </section>
