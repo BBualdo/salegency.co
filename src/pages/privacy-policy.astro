@@ -10,8 +10,8 @@ import MainLayout from "../layouts/MainLayout.astro";
   <header class="flex items-center justify-center py-20">
     <Logo href="/" className="w-[240px]" />
   </header>
-  <main class="flex flex-col items-center">
-    <div class="max-w-[1080px]">
+  <main class="flex flex-col items-center px-4">
+    <div class="xs:max-lg:w-full lg:max-w-[1080px]">
       <h1 class="heading normal-case text-left">Privacy Policy</h1>
       <div class="mt-10 text-lg flex flex-col gap-4">
         <p>
@@ -452,5 +452,8 @@ import MainLayout from "../layouts/MainLayout.astro";
     font-weight: bold;
     color: #7ed957;
   }
+
+  a {
+    word-break: break-all;
+  }
 </style>
-../components/interface/Logo.tsx
