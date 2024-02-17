@@ -53,5 +53,4 @@
   .gradient-zinc-r {
     @apply bg-gradient-to-b from-black to-zinc-900;
   }
-
 }

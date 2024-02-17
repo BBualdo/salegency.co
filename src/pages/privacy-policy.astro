@@ -1,6 +1,7 @@
 ---
 import Logo from "../components/interface/Logo";
 import MainLayout from "../layouts/MainLayout.astro";
+import Table from "../components/interface/Table.astro";
 ---
 
 <MainLayout
@@ -65,7 +66,28 @@ import MainLayout from "../layouts/MainLayout.astro";
               SALEGENCY processes your data for specific purposes, under legal
               foundations, and for the indicated duration as outlined below:
             </p>
-            <!--tabelka-->
+            <Table>
+              <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+              </tr>
+            </Table>
           </div>
           <div class="flex flex-col gap-2">
             <h2>
@@ -82,7 +104,28 @@ import MainLayout from "../layouts/MainLayout.astro";
               for a specific purpose, based on legal grounds, and for the
               duration indicated below:
             </p>
-            <!--tabelka-->
+            <Table>
+              <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+              </tr>
+            </Table>
           </div>
           <div class="flex flex-col gap-2">
             <h2>III. Details for Those Interested in Salegency’s Offer:</h2>
@@ -99,7 +142,23 @@ import MainLayout from "../layouts/MainLayout.astro";
               accordance with legal requirements, and for the duration outlined
               below:
             </p>
-            <!--tabelka-->
+            <Table>
+              <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+              </tr>
+            </Table>
           </div>
           <div class="flex flex-col gap-2">
             <h2>
@@ -111,7 +170,23 @@ import MainLayout from "../layouts/MainLayout.astro";
               specific purpose, based on legal grounds, and for the duration
               indicated below:
             </p>
-            <!--tabelka-->
+            <Table>
+              <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+              </tr>
+            </Table>
           </div>
           <div class="flex flex-col gap-2">
             <h2>
@@ -124,7 +199,23 @@ import MainLayout from "../layouts/MainLayout.astro";
               compliance with legal requirements, and within the duration
               specified below:
             </p>
-            <!--tabelka-->
+            <Table>
+              <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+              </tr>
+            </Table>
           </div>
         </div>
         <h2>WHERE DOES SALEGENCY SOURCE YOUR PERSONAL INFORMATION?</h2>
@@ -149,7 +240,28 @@ import MainLayout from "../layouts/MainLayout.astro";
           </li>
         </ul>
         <h2>IS IT REQUIRED TO DISCLOSE YOUR INFORMATION?</h2>
-        <!--tabelka-->
+        <Table>
+          <tr>
+            <td>1</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>2</td>
+          </tr>
+        </Table>
         <h2>WHO HAS ACCESS TO PERSONAL INFORMATION:</h2>
         <p>Access to your personal information may be granted to:</p>
         <ul class="ml-4">
@@ -455,5 +567,11 @@ import MainLayout from "../layouts/MainLayout.astro";
 
   a {
     word-break: break-all;
+  }
+
+  tr,
+  td {
+    border: solid 1px white;
+    padding: 8px;
   }
 </style>
