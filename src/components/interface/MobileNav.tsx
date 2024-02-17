@@ -5,6 +5,7 @@ import { MdClose } from "react-icons/md";
 import navlinks from "../../constants/navlinks";
 import Logo from "./Logo";
 import LetsTalkButton from "./LetsTalkButton";
+import { FaFacebookSquare, FaInstagram } from "react-icons/fa";
 
 const MobileNav = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -47,6 +48,24 @@ const MobileNav = () => {
             ))}
           </div>
           <LetsTalkButton>Let's talk</LetsTalkButton>
+          <div className="flex items-center gap-4 xs:text-2xl lg:text-3xl text-greencell">
+            <a
+              aria-label="Link to Radek's Facebook"
+              href="https://www.facebook.com/profile.php?id=100013716438314"
+              target="_blank"
+              className="hover:text-white transition-all duration-300"
+            >
+              <FaFacebookSquare />
+            </a>
+            <a
+              aria-label="Link to Radek's Instagram"
+              href="https://www.instagram.com/radekbartczakofficial/"
+              target="_blank"
+              className="hover:text-white transition-all duration-300"
+            >
+              <FaInstagram />
+            </a>
+          </div>
         </div>
       </nav>
     </>

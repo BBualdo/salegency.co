@@ -47,11 +47,11 @@
   }
 
   .gradient-zinc {
-    @apply bg-gradient-to-t from-zinc-950 to-zinc-900;
+    @apply bg-gradient-to-t from-black to-zinc-900;
   }
 
   .gradient-zinc-r {
-    @apply bg-gradient-to-b from-zinc-950 to-zinc-900;
+    @apply bg-gradient-to-b from-black to-zinc-900;
   }
 
 }
