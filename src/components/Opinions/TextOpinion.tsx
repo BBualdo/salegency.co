@@ -33,7 +33,7 @@ const TextOpinion = ({
       <div className="flex flex-col items-center gap-2">
         <img
           src={image}
-          alt={`${author} photo`}
+          alt={`${author}`}
           width={100}
           height={100}
           className="rounded-full xs:max-lg:w-[60px] xs:max-lg:h-[60px] aspect-[1/1]"

@@ -53,12 +53,14 @@ const OpinionList = () => {
         })}
       </div>
       <button
+        aria-label="Previous Opinion"
         onClick={prevOpinion}
         className="text-greencell text-2xl p-2 bg-black rounded-full border-2 border-greencell absolute xs:left-0 lg:-left-8 opacity-50 hover:opacity-100 transition-all duration-300"
       >
         <FaArrowLeft />
       </button>
       <button
+        aria-label="Next Opinion"
         onClick={nextOpinion}
         className="text-greencell text-2xl p-2 bg-black rounded-full border-2 border-greencell absolute xs:right-0 lg:-right-8 opacity-50 hover:opacity-100 transition-all duration-300"
       >
