@@ -1,16 +1,16 @@
 ---
-import OpinionList from "./OpinionList.astro";
+import OpinionList from "./OpinionList";
 ---
 
 <section
   id="opinions"
   class="gradient-zinc w-full flex items-center justify-center"
 >
-  <div class="section flex-col">
+  <div class="section flex-col xs:max-lg:w-full">
     <h2 class="heading text-greencell">See what others say about us.</h2>
     <h3 class="text-white xs:text-lg xs:max-lg:text-center lg:text-2xl">
       Here are some of our references:
     </h3>
-    <OpinionList />
+    <OpinionList client:load />
   </div>
 </section>
