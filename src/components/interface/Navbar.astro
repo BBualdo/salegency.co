@@ -2,6 +2,7 @@
 import Logo from "./Logo";
 import navlinks from "../../constants/navlinks";
 import LetsTalkButton from "./LetsTalkButton";
+import { FaFacebookSquare, FaInstagram } from "react-icons/fa";
 ---
 
 <header
@@ -29,6 +30,24 @@ import LetsTalkButton from "./LetsTalkButton";
         }
       </div>
       <LetsTalkButton>Let's Talk</LetsTalkButton>
+      <div class="text-greencell flex items-center gap-2 text-2xl">
+        <a
+          aria-label="Link to Radek's Facebook"
+          href="https://www.facebook.com/profile.php?id=100013716438314"
+          target="_blank"
+          class="hover:text-white transition-all duration-300"
+        >
+          <FaFacebookSquare />
+        </a>
+        <a
+          aria-label="Link to Radek's Instagram"
+          href="https://www.instagram.com/radekbartczakofficial/"
+          target="_blank"
+          class="hover:text-white transition-all duration-300"
+        >
+          <FaInstagram />
+        </a>
+      </div>
     </div>
   </nav>
 </header>
