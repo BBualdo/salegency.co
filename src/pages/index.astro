@@ -16,12 +16,12 @@ import MobileNav from "../components/interface/MobileNav";
   description="The world's first agency dedicated to optimizing monthly sales for experts and coaches."
 >
   <Navbar />
-  <MobileNav client:load />
+  <MobileNav client:visible />
 
   <main class="flex flex-col items-center">
     <Intro />
     <Mission />
-    <Opinions />
+    <Opinions client:visible />
     <Offer />
     <Process />
     <Results />
