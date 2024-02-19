@@ -34,9 +34,7 @@ const TextOpinion = ({
         <img
           src={image}
           alt={`${author}`}
-          width={100}
-          height={100}
-          className="rounded-full xs:max-lg:w-[60px] xs:max-lg:h-[60px] aspect-[1/1]"
+          className="rounded-full lg:w-[100px] lg:h-[100px] xs:max-lg:w-[60px] xs:max-lg:h-[60px] object-cover object-top"
         />
         <div className="flex flex-col items-center">
           <p className="text-lg">{author}</p>

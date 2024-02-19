@@ -1,4 +1,5 @@
 ---
+import Logo from "../components/interface/Logo";
 import MainLayout from "../layouts/MainLayout.astro";
 ---
 
@@ -6,7 +7,27 @@ import MainLayout from "../layouts/MainLayout.astro";
   title="Salegency - Creativity to Profit."
   description="The world's first agency dedicated to optimizing monthly sales for experts and coaches."
 >
-  <main class="min-h-screen flex items-center justify-center">
-    Calendly soon...
+  <header class="flex items-center justify-center py-20">
+    <Logo href="/" className="w-[240px]" />
+  </header>
+
+  <main class="flex flex-col items-center px-4">
+    <section class="section flex-col items-center">
+      <h1 class="heading">
+        Book Below Your Free Consultation Call and Discover How We Can Help You
+        Increase Revenue:
+      </h1>
+
+      <div
+        class="calendly-inline-widget flex-1"
+        data-url="https://calendly.com/ejirouweghrepha"
+      >
+      </div>
+    </section>
   </main>
 </MainLayout>
+
+<script
+  type="text/javascript"
+  src="https://assets.calendly.com/assets/external/widget.js"
+  async></script>
