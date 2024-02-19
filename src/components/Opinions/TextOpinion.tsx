@@ -10,10 +10,10 @@ const TextOpinion = ({
   index,
   currentIndex,
 }: {
-  image: string;
-  author: string;
-  company: string;
-  content: string;
+  image?: string;
+  author?: string;
+  company?: string;
+  content?: string;
   index: number;
   currentIndex: number;
 }) => {

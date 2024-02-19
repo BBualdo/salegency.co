@@ -1,4 +1,14 @@
-const opinions = [
+type Opinion = {
+  type: "text" | "video";
+  image? : string;
+  author? : string;
+  company? : string;
+  content? : string;
+  videoURL?: string;
+  title?: string;
+}
+
+const opinions:Opinion[] = [
   {
     type: "text",
     image: "/img/Charro-Pyl.avif",
