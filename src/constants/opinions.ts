@@ -49,16 +49,16 @@ const opinions:Opinion[] = [
     content:
       "We smoothly transitioned the strategy into tangible results, leading to impressive sales outcomes in a short time.",
   },
-  {
-    type: "video",
-    image: "",
-    author: "Charro Pyl",
-    company: "FitByCharro",
-    content:
-      "",
-    videoURL: "https://youtube.com/embed/5VjZnWxhUoc?si=t_PC6tokPodo3YI5",
-    title:"Charro Pyl Salegency review."
-  },
+  // {
+  //   type: "video",
+  //   image: "",
+  //   author: "Charro Pyl",
+  //   company: "FitByCharro",
+  //   content:
+  //     "",
+  //   videoURL: "https://youtube.com/embed/5VjZnWxhUoc?si=t_PC6tokPodo3YI5",
+  //   title:"Charro Pyl Salegency review."
+  // },
 ];
 
 export default opinions

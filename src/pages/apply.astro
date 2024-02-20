@@ -1,6 +1,8 @@
 ---
 import Logo from "../components/interface/Logo";
 import MainLayout from "../layouts/MainLayout.astro";
+import CalendlyDesktop from "../components/interface/CalendlyDesktop.astro";
+import CalendlyMobile from "../components/interface/CalendlyMobile.astro";
 ---
 
 <MainLayout
@@ -17,8 +19,8 @@ import MainLayout from "../layouts/MainLayout.astro";
         Book Below Your Free Consultation Call and Discover How We Can Help You
         Increase Revenue:
       </h1>
-      <!-- <CalendlyDesktop client:load />
-      <CalendlyMobile client:load /> -->
+      <CalendlyDesktop />
+      <CalendlyMobile />
     </section>
   </main>
 </MainLayout>
