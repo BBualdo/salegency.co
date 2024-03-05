@@ -9,6 +9,7 @@ import Results from "../components/Results/Results.astro";
 import About from "../components/About/About.astro";
 import Navbar from "../components/interface/Navbar.astro";
 import MobileNav from "../components/interface/MobileNav";
+import Logo from "../components/interface/Logo";
 ---
 
 <MainLayout
@@ -17,7 +18,9 @@ import MobileNav from "../components/interface/MobileNav";
 >
   <Navbar />
   <MobileNav client:visible />
-
+  <div class="xs:max-lg:hidden bg-black py-4 flex items-center justify-center">
+    <Logo href="/" className="w-[160px]" />
+  </div>
   <main class="flex flex-col items-center">
     <Intro />
     <Mission />
