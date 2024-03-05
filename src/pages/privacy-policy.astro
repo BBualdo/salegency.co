@@ -67,13 +67,17 @@ import Table from "../components/interface/Table.astro";
               foundations, and for the indicated duration as outlined below:
             </p>
             <Table>
-              <tr>
-                <td
-                  >Conclusion and Implementation of the Agreement with Salegency</td
-                >
-                <td>Article 6(1)(b) of the GDPR</td>
-                <td>Duration of the agreement</td>
-              </tr>
+              <thead>
+                <tr>
+                  <td
+                    >Conclusion and Implementation of the Agreement with
+                    Salegency</td
+                  >
+                  <td>Article 6(1)(b) of the GDPR</td>
+                  <td>Duration of the agreement</td>
+                </tr>
+              </thead>
+
               <tr>
                 <td
                   >Pursuing claims and defending against claims arising from
@@ -708,6 +712,10 @@ import Table from "../components/interface/Table.astro";
   h2 {
     font-weight: bold;
     color: #7ed957;
+  }
+
+  thead {
+    border-color: #7ed957;
   }
 
   a {

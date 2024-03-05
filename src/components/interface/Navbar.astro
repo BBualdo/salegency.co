@@ -6,18 +6,16 @@ import { FaFacebookSquare, FaInstagram } from "react-icons/fa";
 ---
 
 <header
-  class="flex fixed top-4 left-0 right-0 items-center justify-center py-4 z-40"
+  class="flex fixed bottom-4 left-0 right-0 items-center justify-center py-4 z-40"
 >
   <nav
-    class="xs:max-lg:hidden min-w-[1080px] gradient-dark-reversed p-[1px] rounded-xl h-[60px]"
+    class="xs:max-lg:hidden min-w-[800px] gradient-dark-reversed p-[1px] rounded-xl h-[60px]"
   >
     <div
       class="gradient-dark flex items-center rounded-xl justify-between gap-10 h-[60px] p-4"
     >
-      <Logo href="#intro" className="w-[100px]" />
-      <div
-        class="flex flex-1 items-center justify-center gap-10 text-white text-lg font-bold"
-      >
+      <!-- <Logo href="#intro" className="w-[100px]" /> -->
+      <div class="flex flex-1 items-center gap-10 text-white text-lg font-bold">
         {
           navlinks.map((link) => (
             <a
