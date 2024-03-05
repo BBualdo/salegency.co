@@ -123,11 +123,14 @@ import Table from "../components/interface/Table.astro";
               duration indicated below:
             </p>
             <Table>
-              <tr>
-                <td>Purpose of data processing</td>
-                <td>Legal basis for data processing</td>
-                <td>Period of storage/processing of personal data</td>
-              </tr>
+              <thead>
+                <tr>
+                  <td>Purpose of data processing</td>
+                  <td>Legal basis for data processing</td>
+                  <td>Period of storage/processing of personal data</td>
+                </tr>
+              </thead>
+
               <tr>
                 <td
                   >Implementation of the agreement concluded by Salegency with
@@ -186,11 +189,14 @@ import Table from "../components/interface/Table.astro";
               below:
             </p>
             <Table>
-              <tr>
-                <td>Purpose of data processing</td>
-                <td>Legal basis for data processing</td>
-                <td>Period of storage/processing of personal data</td>
-              </tr>
+              <thead
+                ><tr>
+                  <td>Purpose of data processing</td>
+                  <td>Legal basis for data processing</td>
+                  <td>Period of storage/processing of personal data</td>
+                </tr></thead
+              >
+
               <tr>
                 <td
                   >Presentation of the requested offer and conducting
@@ -242,11 +248,14 @@ import Table from "../components/interface/Table.astro";
               indicated below:
             </p>
             <Table>
-              <tr>
-                <td>Purpose of data processing</td>
-                <td>Legal basis for data processing</td>
-                <td>Period of storage/processing of personal data</td>
-              </tr>
+              <thead
+                ><tr>
+                  <td>Purpose of data processing</td>
+                  <td>Legal basis for data processing</td>
+                  <td>Period of storage/processing of personal data</td>
+                </tr></thead
+              >
+
               <tr>
                 <td>Contact regarding an inquiry/report submitted via email</td>
                 <td
@@ -296,11 +305,14 @@ import Table from "../components/interface/Table.astro";
               specified below:
             </p>
             <Table>
-              <tr>
-                <td>Purpose of data processing</td>
-                <td>Legal basis for data processing</td>
-                <td>Period of storage/processing of personal data</td>
-              </tr>
+              <thead>
+                <tr>
+                  <td>Purpose of data processing</td>
+                  <td>Legal basis for data processing</td>
+                  <td>Period of storage/processing of personal data</td>
+                </tr>
+              </thead>
+
               <tr>
                 <td
                   >Conducting marketing activities related to Salegency's
@@ -363,14 +375,18 @@ import Table from "../components/interface/Table.astro";
         </ul>
         <h2>IS IT REQUIRED TO DISCLOSE YOUR INFORMATION?</h2>
         <Table>
-          <tr>
-            <td>Customers and Contractors</td>
-            <td
-              >Providing your data is voluntary, but it is necessary for the
-              conclusion and execution of the contract. Refusal to provide data
-              may result in the inability to conclude or execute the contract.</td
-            >
-          </tr>
+          <thead>
+            <tr>
+              <td>Customers and Contractors</td>
+              <td
+                >Providing your data is voluntary, but it is necessary for the
+                conclusion and execution of the contract. Refusal to provide
+                data may result in the inability to conclude or execute the
+                contract.</td
+              >
+            </tr>
+          </thead>
+
           <tr>
             <td
               >Employees/Co-workers of the Customer or
@@ -714,8 +730,11 @@ import Table from "../components/interface/Table.astro";
     color: #7ed957;
   }
 
-  thead {
-    border-color: #7ed957;
+  thead > tr > td {
+    border: 2px solid #7ed957;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgb(126, 217, 87, 0.05);
   }
 
   a {
